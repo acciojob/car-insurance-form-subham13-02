@@ -8,42 +8,47 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form action="">
+	<form  method="post" action="file" name="form" id="form">
+        <h1>FORM</h1>
+        <div>
+            <label for="name">Names*</label><br>
+            <input type="text" name="name" id="name" required>
+        </div>
+		
 		<div>
-			<label for="fname">Name</label><br>
-			<input type="text" name="input#name">
+            <label for="email">Email*</label><br>
+            <input type="email" name="email" id="email" required>
 		</div>
+		
 		<div>
-			<label for="email">Email*</label><br>
-			<input type="email" name="email">
+            <label for="gender" >Gender*</label><br>
+            <input type="radio" name="gender" id="gender_m" required> Male
+			<input type="radio" name="gender" id="gender_f" required> Female
 		</div>
-		<div>
-			<label for="radio">Gender*</label><br>
-			<input type="radio" name="gender" >Male<br>
-			<input type="radio" name="gender" >Female<br>
+
+		 <div>
+			<label for="cars">Car Brands</label>
+            <select for="cars" name="cars" id="cars">
+				<option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Mercedez">Mercedez</option>
+            </select>
 		</div>
-		<div>
-			<label for="age">Car Age*</label><br>
-			<input type="number" max4>
-		</div>
-		<div>
-			<label for="car brands">Car Brands</label><br>
-			<input type="checkbox" >BMW<br>
-			<input type="checkbox" >Audi<br>
-			<input type="checkbox" >Merxedez<br>
-		</div>
-		<div>
-			<label for="dop">Date of Purchase(dop)*</label><br>
-			<input type="date"  name="dop">
-		</div>
-		<div>
-			<label for="password">Password*</label><br>
-			<input type="password">
-		</div>
-		<div>
-			<input type="button" name="submilt" value="Submit" >
-		</div>
-	</form>
+		
+        <div>
+            <label for="carage">Car Age*</label><br>
+            <input type="number" name="carage" id="carage" required>
+        </div>
+
+        <div>
+            <label for="password">Password*</label><br>
+            <input type="password" name="password" id="password" required>
+        </div>
+
+        <div>
+            <button type="submit" name="submit" id="submit">Submit</button>
+        </div>
+    </form>
     <script type="text/javascript" src="./script.js">
 </script>
 
